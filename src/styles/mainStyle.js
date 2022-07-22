@@ -53,12 +53,9 @@ export const Maincardstyle = styled.div`
 `
 
 export const Divlogo = styled.div`
-
     img{
         width: 191px;
     }
-
-
 `
 
 export const Divtitleedescription = styled.div`
@@ -119,5 +116,86 @@ export const Divtitleteble = styled.div`
         margin-bottom: -40px;
     }
 `
+export const Divtabletaxes = styled.div`
+    display: flex;
+    align-items: center;
+`
 
+export const Divwarnings = styled.div`
+    text-align: center;
+    h1{
+        margin-top: -25px;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #454545;
+    }    
+    h2{
+        margin-top: 15px;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #454545;
+    }
 
+    span{
+        color: #00BCB5;
+    }
+    @media (max-width: 450px) {
+        h1{
+            font-size: 19px;
+        }
+        h2{
+            font-size: 20px;
+        }
+
+    }
+`
+
+export const Divbutton = styled.div`
+    a{
+        text-decoration: none;
+    }
+
+    button{
+        display: flex;
+        padding: 15px;
+        align-items: center;
+
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ffff;
+
+        background-color: #00BCB5;
+
+        border: none;
+        border-radius: 50px;
+    
+        cursor: pointer;
+
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+
+        :hover{
+            background-color: #00DCCF;
+            /* #005C59 */
+        }
+    }
+
+    img{
+        margin-right: 10px;
+        width: 30px;
+    }
+`

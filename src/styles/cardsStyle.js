@@ -215,22 +215,18 @@ export const Cardresultstyle = styled.div`
     }
 `
 
-export const CardtableAstyle = styled.div`
-
+export const Cardtablecostingstyle = styled.div`
     display: flex;
-    float: right;
     flex-direction: column;
     align-items: center;
-    padding: 16px;
-    gap: 8px;
+    padding: 20px;
 
-    width: 377px;
-    height: 299px;
+    margin-right: 25px;
 
-    /* Quase Branco */
+    width: 500px;
+    height: fit-content;
 
     background: #FAFAFA;
-    /* Sombra (token) */
 
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
@@ -239,7 +235,7 @@ export const CardtableAstyle = styled.div`
         font-family: 'Red Hat Display';
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 30px;
         line-height: 26px;
         display: flex;
         align-items: center;
@@ -252,15 +248,15 @@ export const CardtableAstyle = styled.div`
     table{
         display: table;
 
-        width: 345px;
-        height: 233px;
+        width: 500px;
+        height: 250px;
 
         text-align: center;
         
         font-family: 'Red Hat Display';
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 16px;
 
         color: #454545;
@@ -271,40 +267,57 @@ export const CardtableAstyle = styled.div`
     #thead{
         display: table-header-group;
 
-            font-family: 'Red Hat Display';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 19px;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 19px;
 
-            border-top: none;
+        border-top: none;
+        color: #454545;
     }
 
     tr{
         display: table-row;
         border-top: 1px solid #00BCB5;
-
-        margin: 10px
     }
 
     td{
         display: table-cell;
+        padding: 15px;
+    }
 
-        padding: 7px;
+    span{
+        color: #00BCB5;
     }
     
+    #lasttr{
+        font-weight: bold;
+    }
+
+    #circle{
+        position: absolute;
+        margin-top: -8px;
+        margin-left: -20px;
+    }
+
+    #cet{
+        color: #00BCB5;
+    }
+
     @media (max-width:450px){
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        margin: 25px;
-
-        width: 330px;
-        height: auto;
-
+        margin: 0px;
+        width: fit-content;
         margin-bottom: 20px;
+
+        h1{
+            font-size: 24px;
+        }
 
         table{
             width: 330px;
@@ -316,28 +329,25 @@ export const CardtableAstyle = styled.div`
         td{
             display: table-cell;
 
-            padding-top: 12px;
+            padding-top: 15px;
         }
     }
 
 `
 
-export const CardtableBstyle = styled.div`
+export const CardtableInvestimentStyle = styled.div`
     display: flex;
-    float: left;
+    float: right;
     flex-direction: column;
     align-items: center;
     padding: 16px;
     margin-right: 30px;
-    gap: 8px;
 
-    width: 377px;
-    height: 299px;
 
-    /* Quase Branco */
+    width: fit-content;
+    height: fit-content;
 
     background: #FAFAFA;
-    /* Sombra (token) */
 
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
@@ -388,41 +398,57 @@ export const CardtableBstyle = styled.div`
     tr{
         display: table-row;
         border-top: 1px solid #00BCB5;
-
-        margin: 10px
     }
 
     td{
         display: table-cell;
 
-        padding: 7px;
+        padding: 12px;
     }
 
-        @media (max-width:450px){
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    span{
+        color: #00BCB5;
+    }
 
-        margin: 25px;
+    #lasttr{
+        font-weight: bold;
+    }
 
+    #circle{
+        position: absolute;
+        margin-top: -8px;
+        margin-left: -20px;
+    }
+
+    #cet2{
+        color: #00BCB5;
+    }
+
+    @media (max-width:450px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 25px;
+
+    width: 330px;
+    height: auto;
+
+    margin-bottom: 20px;
+
+    table{
         width: 330px;
-        height: auto;
-
-        margin-bottom: 20px;
-
-        table{
-            width: 330px;
-            height: 281px;
+        height: 281px;
 
 
-            margin-top: 10px;
-        }
-        
-        td{
-            display: table-cell;
+        margin-top: 10px;
+    }
+    
+    td{
+        display: table-cell;
 
-            padding-top: 12px;
-        }
+        padding-top: 12px;
+    }
     }
 `

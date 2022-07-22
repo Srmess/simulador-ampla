@@ -1,7 +1,7 @@
 import React from "react";
-import { Cardinput, Cardresult, CardtableA, CardtableB } from ".";
-import { Logo, Titleedescription, TableTitle } from ".."
-import { Maincardstyle } from "../../../styles";
+import { Cardinput, Cardresult, Cardtablecosting } from ".";
+import { Logo, Titleedescription, TableTitle, Warnings, WhatsappButton } from ".."
+import { Maincardstyle, Divtabletaxes } from "../../../styles";
 
 export const Maincard = () => {
     return(
@@ -13,9 +13,14 @@ export const Maincard = () => {
             <Cardresult/>
         </div>
         <TableTitle/>
+        <Divtabletaxes>
+            <Cardtablecosting/>
+        </Divtabletaxes>
         <div>
-            <CardtableA/>
-            <CardtableB/>
+            <Warnings/>
+        </div>
+        <div>
+            <WhatsappButton/>
         </div>
     </Maincardstyle>
     )

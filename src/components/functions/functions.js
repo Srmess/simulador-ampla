@@ -3,29 +3,35 @@ export const onSubmit = (data) => {
     var value = Number(data.number);
 
     var sifao = "R$ ";
-    var percent = "%";
 
+    //dados tabela de custeio
     var IOFtotal = (value*0.0038);
-    var JUROStotal = (value*0.045);
+    var JUROStotal = (value*0.06);
     var TdPtotal = (value*0.02);
-    var SPtotal = (value*0.01);
-    var PRESTtotal = (value*0.02);
+    var SPtotal = (value*0.008);
 
-    var somaporc = (value*0.0038)+(value*0.045)+(value*0.02)+(value*0.01)+(value*0.02);
-    var somataxa = (somaporc+value);
-    
-    var totalporc = (somaporc/1000)
+    var somaporc = (value*0.0038)+(value*0.06)+(value*0.02)+(value*0.008);
 
-    document.getElementById("porc").textContent = String(totalporc.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2})+percent);
     document.getElementById("cet").textContent = String(sifao+(somaporc.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2})));
 
     document.getElementById("iof").textContent   = String(sifao+IOFtotal.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2}));
     document.getElementById("juros").textContent = String(sifao+JUROStotal.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2}));
     document.getElementById("tdp").textContent   = String(sifao+TdPtotal.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2}));
     document.getElementById("sa").textContent    = String(sifao+SPtotal.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2}));
-    document.getElementById("prest").textContent = String(sifao+PRESTtotal.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2}));
 
+    //valor da simulação
+    var somataxa = (value);
     document.getElementById("textsoma").textContent = String(somataxa.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2}));
+
+    //dado tabela de investimento
+    // var TCtotal = (value*0.02);
+    // var somaporc2 = (value*0.0038)+(value*0.02)+(value*0.02);
+
+    // document.getElementById("iof2").textContent = String(sifao+IOFtotal.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2}));
+    // document.getElementById("tdp2").textContent = String(sifao+TdPtotal.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2}));
+    // document.getElementById("tc2").textContent = String(sifao+TCtotal.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2}));
+
+    // document.getElementById("cet2").textContent = String(sifao+somaporc2.toLocaleString("pt-BR", {maximumFractionDigits: 2, minimumFractionDigits: 2}));
 };
 
 

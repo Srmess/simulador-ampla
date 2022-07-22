@@ -1,14 +1,13 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { Cardinputstyle, Cardresultstyle, CardtableAstyle, CardtableBstyle } from "../../../styles";
+import { Cardinputstyle, Cardresultstyle, Cardtablecostingstyle } from "../../../styles";
 import { onSubmit } from "../../functions/functions";
+import circle from "../imgs/circle.png"
 
 export const Cardinput = () =>{
-
     const { register, handleSubmit} = useForm();
 
     return(
-
         <Cardinputstyle>
             <h1>De quanto você precisa?</h1>
             
@@ -21,7 +20,6 @@ export const Cardinput = () =>{
 }
 
 export const Cardresult = () => {
-
     return(
             <Cardresultstyle>
                 <h1>Valor da simulação <br/><span>R$</span></h1>
@@ -30,15 +28,15 @@ export const Cardresult = () => {
     );
 }
 
-export const CardtableA = () =>{
+export const Cardtablecosting = () =>{
     return(
-        <CardtableAstyle>
-            <h1>Tabela B</h1>
+        <Cardtablecostingstyle>
+            <h1>Tabela de Custeio</h1>
             <table id="table" >
                 <tr id="thead" >
-                    <td> REFERÊNCIAS </td> 
+                    <td> Referências </td> 
                     <td>%</td> 
-                    <td> VALOR </td>
+                    <td> Valor </td>
                 </tr>
                 <tr>
                     <td> IOF </td> 
@@ -46,76 +44,61 @@ export const CardtableA = () =>{
                     <td id="iof">  </td>
                 </tr>
                 <tr>
-                    <td> JUROS </td> 
-                    <td> 4,5% </td> 
+                    <td> Juros </td> 
+                    <td> 6,0% </td> 
                     <td id="juros">  </td>
                 </tr>
                 <tr>
-                    <td> TARIFA DE PROJETO </td> 
-                    <td> 2% </td> 
+                    <td> Tarifa de Projeto </td> 
+                    <td> 2,0% </td> 
                     <td id="tdp">  </td>
                 </tr>
                 <tr>
-                    <td> SEGURO AGRÍCOLA </td> 
-                    <td> 1% </td> 
+                    <td> Seguro Agrícula </td> 
+                    <td> 0,8% </td> 
                     <td id="sa">  </td>
                 </tr>
-                <tr>
-                    <td> PRESTAMISTA </td> 
-                    <td> 2% </td> 
-                    <td id="prest">  </td>
-                </tr>
-                <tr>
-                    <td> CET <br/>Custo Efetivo Total</td> 
-                    <td id="porc"></td> 
+                <tr id="lasttr">
+                    <td> Custo Efetivo <br/><span>(mensal)</span></td> 
+                    <td> <img id="circle" src={circle} alt="circle"/>0,68% </td>
                     <td id="cet"></td>
                 </tr>
             </table>
-        </CardtableAstyle>
+        </Cardtablecostingstyle>
     )
 }
 
-export const CardtableB = () =>{
-    return(
-        <CardtableBstyle>
-            <h1>Tabela A</h1>
-            <table id="table" >
-                <tr id="thead" >
-                    <td> REFERÊNCIAS </td> 
-                    <td>%</td> 
-                    <td> VALOR </td>
-                </tr>
-                <tr>
-                    <td> IOF </td> 
-                    <td> 0.38% </td> 
-                    <td id="iof">  </td>
-                </tr>
-                <tr>
-                    <td> JUROS </td> 
-                    <td> 4.5% </td> 
-                    <td id="juros">  </td>
-                </tr>
-                <tr>
-                    <td> TARIFA DE PROJETO </td> 
-                    <td> 2% </td> 
-                    <td id="tdp">  </td>
-                </tr>
-                <tr>
-                    <td> SEGURO AGRÍCOLA </td> 
-                    <td> 1% </td> 
-                    <td id="sa">  </td>
-                </tr>
-                <tr>
-                    <td> PRESTAMISTA </td> 
-                    <td> 2% </td> 
-                    <td id="prest">  </td>
-                </tr>
-                <tr>
-                    <td> CET <br/>Custo Efetivo Total</td> 
-                    <td id="porc"></td> 
-                    <td id="cet"></td>
-                </tr>
-            </table>
-        </CardtableBstyle>
-    )
-}
+// export const CardTableInvestiment = () =>{
+//     return(
+//         <CardtableInvestimentStyle>
+//             <h1>Tabela de Investimento</h1>
+//             <table id="table" >
+//                 <tr id="thead" >
+//                     <td> Referências </td> 
+//                     <td>%</td> 
+//                     <td> Valor </td>
+//                 </tr>
+//                 <tr>
+//                     <td> IOF </td> 
+//                     <td> 0,38% </td> 
+//                     <td id="iof2">  </td>
+//                 </tr>
+//                 <tr>
+//                     <td> Tarifa de Projeto </td> 
+//                     <td> 2,0% </td> 
+//                     <td id="tdp2">  </td>
+//                 </tr>
+//                 <tr>
+//                     <td> Taxas Cartoriais </td> 
+//                     <td> 2,0% </td> 
+//                     <td id="tc2">  </td>
+//                 </tr>
+//                 <tr id="lasttr">
+//                     <td>Custo Efetivo <br/><span>(mensal)</span></td> 
+//                     <td> <img id="circle" src={circle} alt="circle"/>0,37% </td>
+//                     <td id="cet2"></td>
+//                 </tr>
+//             </table>
+//         </CardtableInvestimentStyle>
+//     )
+// }

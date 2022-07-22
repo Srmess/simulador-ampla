@@ -1,5 +1,5 @@
 import React from "react";
-import { Divtitleedescription, Divtitleteble } from "../../styles";
+import { Divtitleedescription, Divtitleteble, Divwarnings } from "../../styles";
 
 export const Titleedescription = () => {
 
@@ -17,5 +17,13 @@ export const TableTitle = () =>{
             <h1>Entenda as Taxas</h1>
         </Divtitleteble>
     )
-    
+}
+
+export const Warnings = () => {
+    return(
+        <Divwarnings>
+                <h1><span>*</span> Taxas de Juros e Tarifa de Projeto podem variar de acordo com a classificação do produtor rural <span>*</span></h1>
+                <h2><span>*</span> Siumulação feita baseada em parcelas anuais <span>*</span></h2>
+        </Divwarnings>
+    )
 }
