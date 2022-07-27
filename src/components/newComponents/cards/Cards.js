@@ -10,9 +10,8 @@ export const Cardinput = () =>{
     return(
         <Cardinputstyle>
             <h1>De quanto você precisa?</h1>
-            
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input type="number" autoComplete="off" {...register("number")} />
+                <input type="number" step="0.01" autoComplete="off" {...register("number")}/>
                 <button type="submit" id="button">Simular</button>
             </form>
         </Cardinputstyle>

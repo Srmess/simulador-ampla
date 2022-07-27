@@ -166,7 +166,7 @@ export const Divbutton = styled.div`
 
     button{
         display: flex;
-        padding: 15px;
+        padding: 20px;
         align-items: center;
 
         font-family: 'Red Hat Display';
@@ -182,7 +182,7 @@ export const Divbutton = styled.div`
         background-color: #00BCB5;
 
         border: none;
-        border-radius: 50px;
+        border-radius: 40px;
     
         cursor: pointer;
 
