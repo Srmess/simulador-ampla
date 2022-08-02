@@ -11,9 +11,10 @@ export const Divmain = styled.div`
     position: relative;
 
     @media (max-width: 450px) { 
+        display: flex;
         justify-content: center;
         padding: 0px;
-        width: 390px;
+        width: auto;
     }
     @media (max-width: 1000px) {
         flex-direction: column;
