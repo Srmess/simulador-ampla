@@ -156,14 +156,14 @@ export const Divbutton = styled.div`
 
     button{
         display: flex;
-        padding: 20px;
+        padding: 15px;
         align-items: center;
 
         font-family: 'Red Hat Display';
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
-        line-height: 21px;
+        font-size: 1em;
+        line-height: 1em;
         display: flex;
         align-items: center;
         text-align: center;
@@ -172,7 +172,7 @@ export const Divbutton = styled.div`
         background-color: #00BCB5;
 
         border: none;
-        border-radius: 40px;
+        border-radius: 10px;
     
         cursor: pointer;
 
@@ -185,7 +185,7 @@ export const Divbutton = styled.div`
     }
 
     img{
-        margin-right: 10px;
-        width: 30px;
+        margin-right: 15px;
+        width: 20px;
     }
 `
