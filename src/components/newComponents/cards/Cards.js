@@ -53,7 +53,7 @@ export const Cardtablecosting = () =>{
                     <td id="tdp">  </td>
                 </tr>
                 <tr>
-                    <td> Seguro Agrícula </td> 
+                    <td> Seguro Agrícola </td> 
                     <td> 0,8% </td> 
                     <td id="sa">  </td>
                 </tr>

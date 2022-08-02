@@ -112,7 +112,7 @@ export const Divtabletaxes = styled.div`
 `
 
 export const Divwarnings = styled.div`
-    text-align: center;
+    text-align: start;
     h1{
         margin-top: -25px;
         font-family: 'Red Hat Display';

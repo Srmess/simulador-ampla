@@ -22,8 +22,8 @@ export const TableTitle = () =>{
 export const Warnings = () => {
     return(
         <Divwarnings>
-                <h1><span>*</span> Taxas de Juros e Tarifa de Projeto podem variar de acordo com a classificação do produtor rural <span>*</span></h1>
-                <h2><span>*</span> Siumulação feita baseada em parcelas anuais <span>*</span></h2>
+                <h1><span>*</span> Taxas de Juros e Tarifa de Projeto podem variar de acordo com a classificação do produtor rural</h1>
+                <h2><span>*</span> Simulação feita baseada em parcelas anuais</h2>
         </Divwarnings>
     )
 }
