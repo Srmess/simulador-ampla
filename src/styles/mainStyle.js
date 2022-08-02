@@ -1,24 +1,16 @@
 import styled from "styled-components";
-import backgroundimage from "../components/newComponents/imgs/fundoTitulo.png"
-
 
 export const Divmain = styled.div`
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 48px 0px;
 
+    padding: 10px 0px;
 
     position: relative;
 
-
-    background: linear-gradient(119.07deg, rgba(0, 188, 181, 0.8) 0%, rgba(0, 92, 89, 0.8) 100%), url(${backgroundimage});
-    background-repeat: no-repeat;
-    background-size: cover;
-
     @media (max-width: 450px) {
-        padding: 16px;
         width: 450px;
     }
 ` 
@@ -35,8 +27,8 @@ export const Maincardstyle = styled.div`
 
     background: rgba(255, 255, 255, 0.85);
 
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 24px;
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 24px; */
 
     flex: none;
     order: 0;
