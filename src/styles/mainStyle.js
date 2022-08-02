@@ -3,16 +3,20 @@ import styled from "styled-components";
 export const Divmain = styled.div`
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
 
+    align-items: center;
+    justify-content: center;
     padding: 10px 0px;
 
     position: relative;
 
-    @media (max-width: 450px) {
+    @media (max-width: 450px) { 
+        justify-content: center;
         padding: 0px;
         width: 390px;
+    }
+    @media (max-width: 1000px) {
+        flex-direction: column;
     }
 ` 
 
@@ -91,7 +95,6 @@ export const Divtitleteble = styled.div`
     font-weight: 900;
     font-size: 32px;
     line-height: 42px;
-
     color: #454545;
 
     margin-bottom: -50px;
