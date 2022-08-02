@@ -1,6 +1,6 @@
 import React from "react";
 import { Cardinput, Cardresult, Cardtablecosting } from ".";
-import { TableTitle, Warnings, WhatsappButton } from ".."
+import { TableTitle, Warnings } from ".."
 import { Maincardstyle, Divtabletaxes } from "../../../styles";
 
 export const Maincard = () => {
@@ -16,9 +16,6 @@ export const Maincard = () => {
         </Divtabletaxes>
         <div>
             <Warnings/>
-        </div>
-        <div>
-            <WhatsappButton/>
         </div>
     </Maincardstyle>
     )
