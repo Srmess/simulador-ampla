@@ -5,7 +5,7 @@ import iconwhatsapp from "./imgs/icon-whatsapp.png"
 export const WhatsappButton = () =>{
     return(
         <Divbutton>
-            <a href="https://api.whatsapp.com/send/?phone=553333216768&text=Ol%C3%A1%21+Agradecemos+por+entrar+em+contato+com+a+AMPLA+Geourbanismo%21+++Em+breve+um+de+nossos+atendentes+ir%C3%A1+conversar+com+voc%C3%AA.++Se+quiser%2C+pode+adiantar+pra+gente+como+podemos+te+ajudar.&type=phone_number&app_absent=0">
+            <a href="https://api.whatsapp.com/send?phone=553333216768&text=Ol%C3%A1,%20tive%20uma%20d%C3%BAvida%20sobre%20cr%C3%A9dito%20rural,%20pode%20me%20ajudar?">
                 <button>
                     <img src={iconwhatsapp} alt="whatsapp icon"/>
                     Fale conosco
