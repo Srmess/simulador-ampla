@@ -1,13 +1,11 @@
 import React from "react";
 import { Cardinput, Cardresult, Cardtablecosting } from ".";
-import { Logo, Titleedescription, TableTitle, Warnings, WhatsappButton } from ".."
+import { TableTitle, Warnings, WhatsappButton } from ".."
 import { Maincardstyle, Divtabletaxes } from "../../../styles";
 
 export const Maincard = () => {
     return(
     <Maincardstyle>
-        <Logo/>
-        <Titleedescription/>
         <div>
             <Cardinput/>
             <Cardresult/>

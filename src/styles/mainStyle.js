@@ -11,7 +11,8 @@ export const Divmain = styled.div`
     position: relative;
 
     @media (max-width: 450px) {
-        width: 450px;
+        padding: 0px;
+        width: 360px;
     }
 ` 
 
@@ -27,15 +28,8 @@ export const Maincardstyle = styled.div`
 
     background: rgba(255, 255, 255, 0.85);
 
-    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 24px; */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
     @media (max-width: 400px) {
-        width: 250px;
+        width: 200px;
         height: auto;
     }
     @media (max-width: 500px) {
