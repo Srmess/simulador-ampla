@@ -12,7 +12,7 @@ export const Divmain = styled.div`
 
     @media (max-width: 450px) {
         padding: 0px;
-        width: 360px;
+        width: 390px;
     }
 ` 
 
